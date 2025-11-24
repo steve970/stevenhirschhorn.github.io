@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('versionModal');
   const closeButton = document.getElementById('closeModal');
   
+  // Exit early if modal elements don't exist on this page
+  if (!rewindButton || !modal || !closeButton) {
+    return;
+  }
+  
   // Open modal
   rewindButton.addEventListener('click', function() {
     modal.style.display = 'block';

@@ -262,13 +262,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Add smooth scrolling to navigation links
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      smoothScrollTo(targetId);
-    });
-  });
+  // Smooth scrolling is handled by smooth-scroll.js to avoid duplicate listeners
 
 });
